@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head>  
+  <meta charset="UTF-8"> 
+  <title>Galerie</title> 
+  <link rel="stylesheet" href="css/style.css"> 
+</head> 
+<body> 
+  <nav class="navbar"> 
+    <span class="logo">MonSite</span> 
+    <ul> 
+      <li><a href="index.html">Accueil</a></li> 
+      <li><a href="gallery.html" class="active">Galerie</a></li> 
+    </ul> 
+  </nav> 
+  
+  <main style="padding: 48px 32px;"> 
+    <h1>Galerie de projets</h1> 
+  
+    <!-- Filtres --> 
+    <div class="filters"> 
+      <button class="filter-btn active" data-filter="all">Tous</button> 
+      <button class="filter-btn" data-filter="securite">Securite</button> 
+      <button class="filter-btn" data-filter="reseau">Reseau</button> 
+      <button class="filter-btn" data-filter="dev">Dev</button> 
+    </div> 
+  
+    <!-- Cartes de projets --> 
+    <div class="gallery-grid" id="gallery"> 
+      <div class="gallery-card" data-category="securite"> 
+        <div class="card-img" style="background:#ef4444">Audit</div> 
+        <div class="card-info"><h3>Audit de securite</h3><p>Analyse des vulnerabilites 
+reseau</p></div> 
+      </div> 
+      <div class="gallery-card" data-category="reseau"> 
+        <div class="card-img" style="background:#3b82f6">Topo</div> 
+        <div class="card-info"><h3>Topologie reseau</h3><p>Schema d'infrastructure 
+LAN/WAN</p></div> 
+      </div> 
+      <div class="gallery-card" data-category="dev"> 
+        <div class="card-img" style="background:#10b981">App</div> 
+        <div class="card-info"><h3>Application Web</h3><p>Dashboard de monitoring</p></div> 
+      </div> 
+      <div class="gallery-card" data-category="securite"> 
+        <div class="card-img" style="background:#f59e0b">CTF</div> 
+        <div class="card-info"><h3>CTF Challenge</h3><p>Capture The Flag - Edition 
+2024</p></div> 
+      </div> 
+    </div> 
+  </main> 
+  
+  <script src="js/gallery.js"></script> 
+</body> 
+</html>

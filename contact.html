@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="fr"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <title>Contact</title> 
+  <link rel="stylesheet" href="css/style.css"> 
+</head> 
+<body> 
+  <nav class="navbar"> 
+    <span class="logo">MonSite</span> 
+    <ul> 
+      <li><a href="index.html">Accueil</a></li> 
+      <li><a href="contact.html" class="active">Contact</a></li> 
+    </ul> 
+  </nav> 
+  
+  <main style="padding: 48px 32px;"> 
+    <h1>Nous contacter</h1> 
+    <div id="success-msg" style="display:none; color:green; margin:16px 0;"> 
+      Message envoye avec succes ! 
+    </div> 
+    <div id="error-msg" style="display:none; color:red; margin:16px 0;"></div> 
+  
+    <form id="contactForm" style="max-width:500px;"> 
+      <div class="form-group"> 
+        <label>Nom</label> 
+        <input type="text" id="name" placeholder="Votre nom"> 
+      </div> 
+      <div class="form-group"> 
+        <label>Email</label> 
+        <input type="email" id="email" placeholder="votre@email.com"> 
+      </div> 
+      <div class="form-group"> 
+        <label>Message</label> 
+        <textarea id="message" rows="5" placeholder="Votre message..."></textarea> 
+      </div> 
+      <button type="submit" class="btn">Envoyer</button> 
+    </form> 
+  </main> 
+  
+  <script src="js/contact.js"></script> 
+</body> 
+</html> 

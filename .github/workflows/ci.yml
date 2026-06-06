@@ -34,4 +34,7 @@ jobs:
       # # Etape 5 : Valider le CSS 
       # - name: Valider le CSS 
       #   run: npx stylelint "css/**/*.css"
+      # etpae 6 : Jest test
+      - name: Lancer les tests Jest 
+        run: npm test
        

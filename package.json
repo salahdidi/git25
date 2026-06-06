@@ -1,24 +1,15 @@
-{
-  "name": "tp-git-html",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/salahdidi/git25.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/salahdidi/git25/issues"
-  },
-  "homepage": "https://github.com/salahdidi/git25#readme",
-  "devDependencies": {
-    "stylelint": "^17.12.0",
-    "stylelint-config-standard": "^40.0.0"
-  }
-}
+{ 
+  "name": "tp-git-html", 
+  "version": "1.0.0", 
+  "description": "Mini-site HTML/CSS/JS pour apprendre Git et CI/CD", 
+  "scripts": { 
+    "test": "jest", 
+    "test:coverage": "jest --coverage", 
+    "lint:html": "htmlhint '**/*.html'", 
+    "lint:css": "stylelint 'css/**/*.css'" 
+  }, 
+  "devDependencies": { 
+    "jest": "^29.0.0", 
+    "@jest/globals": "^29.0.0" 
+  } 
+} 

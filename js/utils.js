@@ -22,10 +22,10 @@ function validateMessage(message, minLength = 10) {
     return { valid: false, error: 'Le message est requis.' }; 
   } 
   const trimmed = message.trim(); 
-  if (trimmed.length < minLength) { 
-    return { valid: false, error: `Le message doit contenir au moins ${minLength} caracteres.` 
-}; 
-  } 
+//   if (trimmed.length < minLength) { 
+//     return { valid: false, error: `Le message doit contenir au moins ${minLength} caracteres.` 
+// }; 
+//   } 
   return { valid: true, error: null }; 
 } 
   

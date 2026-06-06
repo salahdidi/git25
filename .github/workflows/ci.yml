@@ -26,7 +26,8 @@ jobs:
       # Etape 3 : Installer les outils de validation 
       - name: Installer les outils 
         run: npm install -g htmlhint stylelint stylelint-config-standard 
-  
+      - name: Installer Jest
+        run: npm i
       # Etape 4 : Valider le HTML 
       - name: Valider le HTML 
         run: htmlhint "**/*.html" 

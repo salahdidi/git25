@@ -3,3 +3,4 @@ Thumbs.db
 *.log 
 .env
 .vscode/settings.json 
+node_modules/

@@ -1,0 +1,37 @@
+name: CI - Validation HTML/CSS/JS 
+  
+# Declencheurs : s'execute a chaque push et pull request sur main 
+on: 
+  push: 
+    branches: [ main ] 
+  pull_request: 
+    branches: [ main ] 
+  
+jobs: 
+  validate: 
+    name: Validation du code 
+    runs-on: ubuntu-latest   # Machine virtuelle Linux gratuite 
+  
+    steps: 
+      # Etape 1 : Recuperer le code du depot 
+      - name: Checkout du code 
+        uses: actions/checkout@v4 
+  
+      # Etape 2 : Installer Node.js (pour htmlhint et stylelint) 
+      - name: Installer Node.js 
+        uses: actions/setup-node@v4 
+        with: 
+          node-version: '20' 
+  
+      # Etape 3 : Installer les outils de validation 
+      - name: Installer les outils 
+        run: npm install -g htmlhint stylelint stylelint-config-standard 
+  
+      # Etape 4 : Valider le HTML 
+      - name: Valider le HTML 
+        run: htmlhint "**/*.html" 
+  
+      # # Etape 5 : Valider le CSS 
+      # - name: Valider le CSS 
+      #   run: npx stylelint "css/**/*.css"
+       
